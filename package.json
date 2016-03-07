@@ -1,0 +1,14 @@
+{
+  "name": "node-docker-simpleapp",
+  "version": "1.0.0",
+  "description": "Node.js simpleapp on Docker",
+  "author": "Federico Minzoni <fminzoni@enter.it>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongodb": "^2.1.4"
+  }
+}
