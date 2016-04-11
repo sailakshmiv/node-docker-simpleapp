@@ -1,5 +1,7 @@
 FROM alpine
 
+RUN apk update && apk add curl
+
 COPY test.sh /app/test.sh
 
 WORKDIR /app

@@ -1,6 +1,5 @@
 sut:
-  build: .
-  dockerfile: Dockerfile.test
+  image: fminzoni/sut
   links:
     - web
 web:

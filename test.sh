@@ -1,5 +1,6 @@
 #!/bin/sh
-if curl web | grep -q '[]'; then
+sleep 5
+if curl web:8080; then
   echo "Tests passed!"
   exit 0
 else
