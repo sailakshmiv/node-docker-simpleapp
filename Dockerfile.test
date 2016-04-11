@@ -1,0 +1,8 @@
+FROM alpine
+
+COPY test.sh /app/test.sh
+
+WORKDIR /app
+
+ENTRYPOINT ["sh"]
+CMD ["test.sh"]
