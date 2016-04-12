@@ -1,5 +1,5 @@
 sut:
-  image: fminzoni/sut
+  build: .
   links:
     - web
 web:
