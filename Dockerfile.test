@@ -6,5 +6,8 @@ COPY test.sh /app/test.sh
 
 WORKDIR /app
 
+# fix Unix-style line endings (if built using windows client)
+RUN sed -i -e 's/\r$//' test.sh
+
 ENTRYPOINT ["sh"]
 CMD ["test.sh"]
