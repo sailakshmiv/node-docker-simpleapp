@@ -9,7 +9,7 @@ services:
       - SERVICE_NAME=node-app
       - DATABASE_PORT_27017_TCP_ADDR=mongo-db
       - DB_NAME=TEST
-    depends_on:
+    link:
       - db
 
   db:
