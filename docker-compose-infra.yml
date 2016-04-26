@@ -1,6 +1,15 @@
 version: '2'
 
 services:
+  consul:
+    container_name: consul
+    image: progrium/consul
+    ports:
+      - 8500:8500
+      - 8301:8301
+      - 8300:8300
+    command: -server -bootstrap
+
   registrator:
     container_name: registrator
     image: gliderlabs/registrator
