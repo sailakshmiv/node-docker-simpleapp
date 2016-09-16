@@ -4,7 +4,7 @@ const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
 
 // Constants
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 const DATABASE_PORT_27017_TCP_ADDR = process.env.DATABASE_PORT_27017_TCP_ADDR || '0.0.0.0:27017';
 const DB_NAME = process.env.DB_NAME || 'TEST';
 
